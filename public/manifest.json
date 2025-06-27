@@ -1,0 +1,80 @@
+{
+  "name": "Furkan Kalkan Portfolio",
+  "short_name": "Furkan Kalkan",
+  "description": "Furkan Kalkan'ın macOS temalı portfolio websitesi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "any",
+  "scope": "/",
+  "lang": "tr",
+  "categories": ["portfolio", "personal", "developer"],
+  "icons": [
+    {
+      "src": "/devlogo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/devlogo.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/Wallpaper.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "macOS Masaüstü Görünümü"
+    }
+  ],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Projeler",
+      "short_name": "Projeler",
+      "description": "Furkan'ın projelerini görüntüle",
+      "url": "/?folder=projects",
+      "icons": [
+        {
+          "src": "/projects.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Hakkımda",
+      "short_name": "Hakkımda",
+      "description": "Furkan hakkında bilgi",
+      "url": "/?folder=about",
+      "icons": [
+        {
+          "src": "/personel.png",
+          "sizes": "96x96", 
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "İş Deneyimi",
+      "short_name": "İş Deneyimi",
+      "description": "Furkan'ın iş deneyimleri",
+      "url": "/?folder=work",
+      "icons": [
+        {
+          "src": "/work.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+} 
