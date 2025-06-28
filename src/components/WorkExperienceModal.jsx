@@ -31,8 +31,8 @@ const WorkExperienceModal = () => {
       </div>
 
       <div style={{
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        color: 'white',
+        background: '#f8f9fa',
+        border: '1px solid #dee2e6',
         padding: '20px',
         borderRadius: '12px',
         marginBottom: '10px'
@@ -49,41 +49,40 @@ const WorkExperienceModal = () => {
             <h3 style={{ 
               margin: '0 0 8px 0', 
               fontSize: '20px',
-              fontWeight: 'bold'
+              fontWeight: 'bold',
+              color: '#2c3e50'
             }}>
               Stajyer Yazılım Geliştirici
             </h3>
             <p style={{ 
               margin: '0', 
               fontSize: '16px',
-              opacity: 0.9,
-              fontWeight: '500'
+              fontWeight: '500',
+              color: '#495057'
             }}>
               📍 Vega Yazılım, Samsun/Atakum
             </p>
           </div>
           <div style={{
-            background: 'rgba(255, 255, 255, 0.2)',
-            padding: '8px 12px',
-            borderRadius: '20px',
-            fontSize: '12px',
-            fontWeight: 'bold',
-            whiteSpace: 'nowrap'
+            background: '#e3f2fd',
+            color: '#1976d2',
+            padding: '6px 12px',
+            borderRadius: '16px',
+            fontSize: '11px',
+            fontWeight: 'bold'
           }}>
             📅 Haziran 2024 - Temmuz 2024
           </div>
         </div>
 
         <div style={{
-          background: 'rgba(255, 255, 255, 0.1)',
           padding: '15px',
-          borderRadius: '8px',
-          backdropFilter: 'blur(10px)'
+          borderRadius: '8px'
         }}>
           <h4 style={{ 
             margin: '0 0 12px 0', 
             fontSize: '16px',
-            color: '#fff'
+            color: '#2c3e50'
           }}>
             🎯 Gerçekleştirilen Görevler:
           </h4>
@@ -91,7 +90,8 @@ const WorkExperienceModal = () => {
           <ul style={{ 
             margin: '0', 
             paddingLeft: '20px',
-            listStyle: 'none'
+            listStyle: 'none',
+            color: '#495057'
           }}>
             <li style={{ marginBottom: '10px', position: 'relative' }}>
               <span style={{ position: 'absolute', left: '-20px' }}>🔧</span>

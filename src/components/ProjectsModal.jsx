@@ -32,10 +32,10 @@ const ProjectsModal = () => {
 
       {/* React Native Projesi - Tamamlanmış */}
       <div style={{
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        color: 'white',
-        padding: '20px',
+        background: '#f8f9fa',
+        border: '1px solid #dee2e6',
         borderRadius: '12px',
+        padding: '20px',
         marginBottom: '15px'
       }}>
         <div style={{
@@ -50,48 +50,39 @@ const ProjectsModal = () => {
             <h3 style={{ 
               margin: '0 0 8px 0', 
               fontSize: '20px',
-              fontWeight: 'bold'
+              fontWeight: 'bold',
+              color: '#2c3e50'
             }}>
               📱 React Native Mobil Uygulama
             </h3>
-            <p style={{ 
-              margin: '0', 
-              fontSize: '14px',
-              opacity: 0.9,
-              fontWeight: '500'
-            }}>
-              🏷️ Tamamlanmış Proje
-            </p>
           </div>
           <div style={{
-            background: 'rgba(255, 255, 255, 0.2)',
-            padding: '8px 12px',
-            borderRadius: '20px',
-            fontSize: '12px',
-            fontWeight: 'bold',
-            whiteSpace: 'nowrap'
+            background: '#e3f2fd',
+            color: '#1976d2',
+            padding: '6px 12px',
+            borderRadius: '16px',
+            fontSize: '11px',
+            fontWeight: 'bold'
           }}>
             ✅ Tamamlandı
           </div>
         </div>
 
         <div style={{
-          background: 'rgba(255, 255, 255, 0.1)',
           padding: '15px',
-          borderRadius: '8px',
-          backdropFilter: 'blur(10px)'
+          borderRadius: '8px'
         }}>
           <h4 style={{ 
             margin: '0 0 12px 0', 
             fontSize: '16px',
-            color: '#fff'
+            color: '#2c3e50'
           }}>
             🎯 Proje Detayları:
           </h4>
           
           <p style={{ 
             margin: '0 0 15px 0',
-            opacity: 0.95
+            color: '#495057'
           }}>
             React Native kullanarak Android platformunda bir mobil uygulama geliştirdim. 
             Uygulama, back-end sistemi ile entegre çalışarak gerçek zamanlı veri alışverişini 
@@ -99,10 +90,11 @@ const ProjectsModal = () => {
           </p>
 
           <div style={{
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: 'rgba(0, 0, 0, 0.02)',
             padding: '12px',
             borderRadius: '6px',
-            marginBottom: '15px'
+            marginBottom: '15px',
+            border: '1px solid #e9ecef'
           }}>
             <strong>🔗 Senkronizasyon:</strong> Uygulama, bilgisayardaki tarayıcı üzerinden erişilen 
             web sitem ile senkronize çalışmakta ve kullanıcı işlemlerini anlık olarak veritabanına aktarmaktadır.
@@ -111,7 +103,7 @@ const ProjectsModal = () => {
           <h5 style={{ 
             margin: '0 0 10px 0', 
             fontSize: '14px',
-            color: '#fff'
+            color: '#495057'
           }}>
             🛠️ Kullanılan Teknolojiler:
           </h5>
@@ -122,7 +114,8 @@ const ProjectsModal = () => {
             gap: '8px'
           }}>
             <span style={{
-              background: 'rgba(255, 255, 255, 0.2)',
+              background: '#e3f2fd',
+              color: '#1976d2',
               padding: '4px 8px',
               borderRadius: '12px',
               fontSize: '11px',
@@ -131,7 +124,8 @@ const ProjectsModal = () => {
               React Native
             </span>
             <span style={{
-              background: 'rgba(255, 255, 255, 0.2)',
+              background: '#e3f2fd',
+              color: '#1976d2',
               padding: '4px 8px',
               borderRadius: '12px',
               fontSize: '11px',
@@ -140,7 +134,8 @@ const ProjectsModal = () => {
               Android
             </span>
             <span style={{
-              background: 'rgba(255, 255, 255, 0.2)',
+              background: '#e3f2fd',
+              color: '#1976d2',
               padding: '4px 8px',
               borderRadius: '12px',
               fontSize: '11px',
@@ -149,7 +144,8 @@ const ProjectsModal = () => {
               API Entegrasyonu
             </span>
             <span style={{
-              background: 'rgba(255, 255, 255, 0.2)',
+              background: '#e3f2fd',
+              color: '#1976d2',
               padding: '4px 8px',
               borderRadius: '12px',
               fontSize: '11px',
@@ -158,7 +154,8 @@ const ProjectsModal = () => {
               Real-time Data
             </span>
             <span style={{
-              background: 'rgba(255, 255, 255, 0.2)',
+              background: '#e3f2fd',
+              color: '#1976d2',
               padding: '4px 8px',
               borderRadius: '12px',
               fontSize: '11px',
@@ -194,13 +191,6 @@ const ProjectsModal = () => {
             }}>
               💻 macOS Portfolio Website
             </h3>
-            <p style={{ 
-              margin: '0', 
-              fontSize: '14px',
-              color: '#6c757d'
-            }}>
-              🌐 Web Projesi
-            </p>
           </div>
           <div style={{
             background: '#e3f2fd',

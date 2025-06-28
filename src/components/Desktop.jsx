@@ -29,9 +29,9 @@ const Desktop = ({ onFolderDoubleClick }) => {
   // Sticky notes responsive positioning
   const getStickyNotePosition = () => {
     if (isMobile()) {
-      return { x: window.innerWidth - 170, y: 280 }
+      return { x: window.innerWidth - 170 - 20, y: 280 }
     }
-    return { x: window.innerWidth - 250, y: 120 }
+    return { x: window.innerWidth - 250 - 20, y: 120 }
   }
 
   // Sticky notes state'i
@@ -97,8 +97,8 @@ const Desktop = ({ onFolderDoubleClick }) => {
     const newY = currentPosition.y + info.offset.y
     
     // Ekran sınırları içinde kalmayı sağla
-    const clampedX = Math.max(50, Math.min(newX, window.innerWidth - 120))
-    const clampedY = Math.max(80, Math.min(newY, window.innerHeight - 200))
+    const clampedX = Math.max(0, Math.min(newX, window.innerWidth - 100))
+    const clampedY = Math.max(0, Math.min(newY, window.innerHeight - 180))
     
     setFolderPositions(prev => ({
       ...prev,
@@ -164,11 +164,13 @@ const Desktop = ({ onFolderDoubleClick }) => {
           onTouchStart={handleTouchStart}
           style={{
             position: 'absolute',
-            left: folderPositions[folder.id].x,
-            top: folderPositions[folder.id].y,
             cursor: isMobile() ? 'pointer' : 'grab',
             touchAction: isMobile() ? 'manipulation' : 'none',
             WebkitTapHighlightColor: 'transparent'
+          }}
+          animate={{
+            x: folderPositions[folder.id].x,
+            y: folderPositions[folder.id].y
           }}
         >
           <div className="folder-icon">

@@ -36,9 +36,11 @@ const MenuBar = () => {
   )
 
   const WiFiIcon = () => (
-    <svg width="18" height="14" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 2c5.52 0 10 4.48 10 10 0 .78-.09 1.53-.25 2.25-.16.72-.4 1.41-.72 2.06L12 22l-9.03-5.69c-.32-.65-.56-1.34-.72-2.06C2.09 13.53 2 12.78 2 12c0-5.52 4.48-10 10-10zm0 2c-4.41 0-8 3.59-8 8 0 .59.07 1.16.19 1.71.12.55.29 1.08.51 1.58L12 19.92l7.3-4.63c.22-.5.39-1.03.51-1.58.12-.55.19-1.12.19-1.71 0-4.41-3.59-8-8-8z"/>
-      <circle cx="12" cy="12" r="3"/>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4.5 10.5a15 15 0 0 1 15 0" />
+      <path d="M7 13a9 9 0 0 1 10 0" />
+      <path d="M9.5 15.5a4.5 4.5 0 0 1 5 0" />
+      <path d="M12 18h.01" />
     </svg>
   )
 

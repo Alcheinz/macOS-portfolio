@@ -168,7 +168,9 @@ const Modal = ({ children, onClose, onFocus, title = "Window", initialPosition =
           height: size.height,
           cursor: isMobile() ? 'default' : 'default',
           position: 'absolute',
-          pointerEvents: 'auto'
+          pointerEvents: 'auto',
+          display: 'flex',
+          flexDirection: 'column'
         }}
       >
         <div 
@@ -208,9 +210,9 @@ const Modal = ({ children, onClose, onFocus, title = "Window", initialPosition =
         <div 
           className="modal-content" 
           style={{ 
-            height: size.height - (isMobile() ? 44 : 40),
+            flex: 1,
+            overflow: 'auto',
             touchAction: 'auto',
-            overflowY: 'auto',
             WebkitOverflowScrolling: 'touch'
           }}
         >
