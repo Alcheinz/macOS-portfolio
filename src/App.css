@@ -561,8 +561,8 @@ body {
 
   /* Modal Mobile */
   .modal-window {
-    width: calc(100vw - 20px) !important;
-    height: calc(100vh - 100px - env(safe-area-inset-top) - env(safe-area-inset-bottom)) !important;
+    width: 90vw !important;
+    height: 75vh !important;
     max-width: none;
     max-height: none;
     min-width: auto;
@@ -593,8 +593,6 @@ body {
     width: 18px;
     height: 18px;
     touch-action: manipulation;
-    min-width: 44px;
-    min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;

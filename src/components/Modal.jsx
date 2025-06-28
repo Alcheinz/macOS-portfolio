@@ -147,8 +147,7 @@ const Modal = ({ children, onClose, onFocus, title = "Window", initialPosition =
           top: -window.innerHeight/2 + 150,
           bottom: window.innerHeight/2 - 150
         } : false}
-        x={position.x}
-        y={position.y}
+        {...(!isMobile() && { x: position.x, y: position.y })}
         onDragEnd={handleDragEnd}
         initial={{ 
           scale: isMobile() ? 1 : 0.9, 

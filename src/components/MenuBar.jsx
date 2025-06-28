@@ -11,14 +11,19 @@ const MenuBar = () => {
     return () => clearInterval(timer)
   }, [])
 
+  const isMobile = () => window.innerWidth <= 768
+
   const formatTime = (date) => {
-    return date.toLocaleTimeString('tr-TR', { 
-      weekday: 'short',
-      month: 'short', 
-      day: 'numeric',
-      hour: '2-digit', 
-      minute: '2-digit'
-    })
+    const options = isMobile()
+      ? { hour: '2-digit', minute: '2-digit' }
+      : { 
+          weekday: 'short',
+          month: 'short', 
+          day: 'numeric',
+          hour: '2-digit', 
+          minute: '2-digit'
+        }
+    return date.toLocaleTimeString('tr-TR', options)
   }
 
   const AppleLogo = () => (
